@@ -1,0 +1,10 @@
+scenarios:
+  - name: "Search dealerships"
+    flow:
+      - get:
+          url: "/search/dealerships"
+          qs:
+            entityId: "RlVTSU9OOkRFQUxFUjo0MTAxNjAzMTI"
+          headers:
+            x-api-key: "{{ x-api-key }}"
+            x-from: "artillery-test--vitali_kuzmenka@epam.com"

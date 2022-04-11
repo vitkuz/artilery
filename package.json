@@ -1,0 +1,21 @@
+{
+  "name": "play-with-altirely",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dino": "artillery dino",
+    "artillery:help": "artillery help",
+    "artillery:getTenantById:npvitkuz": "artillery run -t https://2p521ng1o9.execute-api.us-east-1.amazonaws.com/npvtikuz --output reports/report-get-tenant-by-id.json --variables {\\\"x-api-key\\\":\\\"*******************************\\\"} -c config.yaml scenarios/getTenantById.yaml",
+    "artillery:getTenants:npvitkuz": "artillery run -t https://2p521ng1o9.execute-api.us-east-1.amazonaws.com/npvtikuz --output reports/report-get-tenants.json --variables {\\\"x-api-key\\\":\\\"*******************************\\\"} -c config.yaml scenarios/getTenants.yaml",
+    "artillery:searchDealerships:npvitkuz": "artillery run -t https://2p521ng1o9.execute-api.us-east-1.amazonaws.com/npvtikuz --output reports/report-search-dealerships.json --variables {\\\"x-api-key\\\":\\\"*******************************\\\"} -c config.yaml scenarios/searchDealerships.yaml",
+    "artillery:getTenantById:nonprod": "artillery run -t https://hn414qu9z3.execute-api.us-east-1.amazonaws.com/nonprod --output reports/report-get-tenant-by-id.json --variables {\\\"x-api-key\\\":\\\"*******************************\\\"} -c config.yaml scenarios/getTenantById.yaml",
+    "artillery:getTenants:nonprod": "artillery run -t https://hn414qu9z3.execute-api.us-east-1.amazonaws.com/nonprod --output reports/report-get-tenants.json --variables {\\\"x-api-key\\\":\\\"*******************************\\\"} -c config.yaml scenarios/getTenants.yaml",
+    "artillery:run:html": "artillery report report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "artillery": "^2.0.0-14"
+  }
+}

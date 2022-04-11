@@ -1,0 +1,17 @@
+config:
+  target: "https://2p521ng1o9.execute-api.us-east-1.amazonaws.com/npvtikuz"
+  phases:
+    - duration: 420
+      arrivalRate: 50
+      name: Warm up
+#    - duration: 120
+#      arrivalRate: 20
+#      rampTo: 200
+#      name: Ramp up load
+#    - duration: 600
+#      arrivalRate: 400
+#      name: Sustained load
+  payload:
+    path: "ids.csv"
+    fields:
+      - "tenantId"

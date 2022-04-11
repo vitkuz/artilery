@@ -1,0 +1,8 @@
+scenarios:
+  - name: "Get tenant by id"
+    flow:
+      - get:
+          url: "/tenants/{{ tenantId }}"
+          headers:
+            x-api-key: "{{ x-api-key }}"
+            x-from: "artillery-test--vitali_kuzmenka@epam.com"
